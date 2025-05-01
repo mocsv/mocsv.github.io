@@ -31,10 +31,11 @@
  * Update the foundational and global aspects of the page.
  */
 html, body {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Oswald', sans-serif;
   background-color: #ffffff;
   color: #000000;
 }
+
 @media (min-width: 48em) {
   html {
     font-size: 16px;
