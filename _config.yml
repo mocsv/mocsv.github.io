@@ -10,7 +10,7 @@ title:            Cereal Talk
 tagline:          'Bite sized.'
 description:      'A blog, best enjoyed with cereal.'
 url:              http://cerealtalk.co.uk
-baseurl:          /
+baseurl:          ""
 
 author:
   name:           'MOCSV'
