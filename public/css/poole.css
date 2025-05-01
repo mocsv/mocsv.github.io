@@ -47,13 +47,15 @@ body {
   padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap');
+
 
 html {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
+
 
 @media (min-width: 38em) {
   html {
