@@ -375,7 +375,7 @@ tbody tr:nth-child(odd) th {
   color: #999;
 }
 .related-posts li a:hover {
-  color: #268bd2;
+  color: #9a9a9a;
   text-decoration: none;
 }
 .related-posts li a:hover small {
