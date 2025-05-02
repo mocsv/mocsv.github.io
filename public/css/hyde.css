@@ -251,3 +251,21 @@ a.sidebar-nav-item:focus {
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
 }
+
+.archive-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 2rem; /* space between title and list */
+}
+
+.archive-list li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.archive-date {
+  color: #666;
+  font-family: monospace;
+  margin-right: 0.5rem;
+}
+
