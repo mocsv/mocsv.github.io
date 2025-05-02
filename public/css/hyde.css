@@ -272,8 +272,7 @@ a.sidebar-nav-item:focus {
 }
 
 .archive-date {
-  color: #9a9a9a; /* lighter grey */
+  color: #aaa; /* softer, lighter grey */
+  font-size: 0.8rem; /* smaller than the post title */
   margin-left: 0.5rem;
-  font-size: 0.9rem;
 }
-
