@@ -15,6 +15,7 @@ layout: null
    <email>{{ site.author.email }}</email>
  </author>
 
+ {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
