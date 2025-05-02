@@ -252,9 +252,8 @@ a.sidebar-nav-item:focus {
   color: #8f5536;
 }
 .archive-list {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 3rem; /* more space from title */
+  padding-left: 1.25rem;
+  margin-top: 1.5rem; /* space from title */
 }
 
 .archive-list li {
