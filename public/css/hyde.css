@@ -251,21 +251,29 @@ a.sidebar-nav-item:focus {
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
 }
-
 .archive-list {
   list-style: none;
   padding-left: 0;
-  margin-top: 2rem; /* space between title and list */
+  margin-top: 3rem; /* more space from title */
 }
 
 .archive-list li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
   line-height: 1.6;
 }
 
+.archive-list a {
+  color: #000;
+  text-decoration: none;
+}
+
+.archive-list a:hover {
+  text-decoration: underline;
+}
+
 .archive-date {
-  color: #666;
-  font-family: monospace;
-  margin-right: 0.5rem;
+  color: #9a9a9a; /* lighter grey */
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
 }
 
