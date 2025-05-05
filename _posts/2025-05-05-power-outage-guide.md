@@ -116,3 +116,6 @@ The likelihood of there being an outage under 24 hours is a lot more likely and 
 
 Whether it's minutes or hours the general knowledge and basic supplies to get you and your family through a power outage of any scale is essential. If anything it will allow you to rest easy, knowing that if the worst happened you and your loved ones would be a step ahead.
 
+<script data-goatcounter="https://cerealtalk.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
