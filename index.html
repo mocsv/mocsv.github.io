@@ -4,17 +4,13 @@ title: Home
 ---
 
 <div class="posts">
-  {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
-  
   {% for post in paginator.posts %}
-    {% assign post = sorted_posts[paginator.offset + forloop.index0] %}
     <div class="post">
       <h1 class="post-title">
         <a href="{{ post.url }}">
           {{ post.title }}
         </a>
       </h1>
-
       <span class="post-date">{{ post.date | date_to_string }}</span>
     </div>
   {% endfor %}
@@ -26,7 +22,7 @@ title: Home
   {% else %}
     <span class="pagination-item older">Older</span>
   {% endif %}
-  
+
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
       <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
@@ -41,3 +37,6 @@ title: Home
     <p>No posts available.</p>
   {% endif %}
 </div>
+
+<script data-goatcounter="https://cerealtalk.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
