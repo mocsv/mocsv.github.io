@@ -47,11 +47,8 @@ body {
   padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&display=swap');
-
-
 html {
-  font-family: 'Oswald', 'Arial Narrow', 'Helvetica Neue Condensed', sans-serif;
+  font-family: 'Roboto Mono', 'SFMono-Regular', 'Courier New', Courier, monospace;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -396,7 +393,7 @@ tbody tr:nth-child(odd) th {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto Mono', 'SFMono-Regular', 'Courier New', Courier, monospace;
   color: #ccc;
   text-align: center;
 }
