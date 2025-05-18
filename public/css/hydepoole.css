@@ -153,70 +153,18 @@ a:focus {
    Content container margins to accommodate sidebar.
    ========================================================================== */
 
-/* Sidebar base styles */
-.sidebar {
-  text-align: center;
-  padding: 2rem 1rem;
-  color: rgba(255,255,255,0.5); /* semi-transparent white */
-  background-color: #202020;    /* dark gray */
-}
-
-/* Fixed sidebar on wider screens */
-@media (min-width: 48em) {
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 18rem; /* Sidebar width */
-    text-align: left;
-  }
-}
-
-/* Sidebar About heading */
-.sidebar-about h1 {
-  color: #fff;
-  margin-top: 0;
-  font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+/* Main title bigger */
+/* Previously h1 font-size: 2rem; let's bump it up */
+h1 {
+  font-size: 3rem; /* Increased from 2rem for bigger main title */
   font-weight: 900;
-  font-size: 2.5rem;
 }
 
-/* Sidebar navigation list */
-.sidebar-nav {
-  margin-bottom: 1rem;
-}
-.sidebar-nav-item {
-  display: block;
-  line-height: 1.75;
-}
-a.sidebar-nav-item:hover,
-a.sidebar-nav-item:focus {
-  text-decoration: underline;
-}
-.sidebar-nav-item.active {
-  font-weight: bold;
-}
-
-/* Sidebar sticky section for small inner content */
-@media (min-width: 48em) {
-  .sidebar-sticky {
-    position: absolute;
-    right: 1rem;
-    bottom: 1rem;
-    left: 1rem;
-  }
-}
-
-/* Main content container padding */
-.content {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-/* On wider screens, constrain content width and add left margin to accommodate sidebar */
+/* Add gap before content text so it doesn't sit right against sidebar */
+/* We'll add some left padding inside the .content on wider screens */
 @media (min-width: 48em) {
   .content {
+    padding-left: 1.5rem; /* Added padding to create breathing space */
     max-width: 38rem;
     margin-left: 16rem;
     margin-right: 2rem;
@@ -224,26 +172,9 @@ a.sidebar-nav-item:focus {
 }
 @media (min-width: 64em) {
   .content {
+    padding-left: 1.5rem; /* keep consistent padding */
     margin-left: 18rem;
     margin-right: 4rem;
-  }
-}
-
-/* Reverse layout option: sidebar on right */
-@media (min-width: 48em) {
-  .layout-reverse .sidebar {
-    left: auto;
-    right: 0;
-  }
-  .layout-reverse .content {
-    margin-left: 2rem;
-    margin-right: 16rem;
-  }
-}
-@media (min-width: 64em) {
-  .layout-reverse .content {
-    margin-left: 4rem;
-    margin-right: 18rem;
   }
 }
 
@@ -252,69 +183,22 @@ a.sidebar-nav-item:focus {
    Sidebar background and link colors for various color themes.
    ========================================================================== */
 
-.theme-base-08 .sidebar {
-  background-color: #ac4142;
-}
-.theme-base-08 .content a,
-.theme-base-08 .related-posts li a:hover {
-  color: #ac4142;
-}
-
-.theme-base-09 .sidebar {
-  background-color: #d28445;
-}
-.theme-base-09 .content a,
-.theme-base-09 .related-posts li a:hover {
-  color: #d28445;
+/* Fix related posts date color: make it grey like before */
+/* Related posts date selector assumed as .related-posts-date or similar */
+.related-posts-date {
+  color: #aaa !important; /* light grey for date text */
+  font-size: 0.85rem;
+  margin-left: 0.5rem;
 }
 
-.theme-base-0a .sidebar {
-  background-color: #f4bf75;
-}
-.theme-base-0a .content a,
-.theme-base-0a .related-posts li a:hover {
-  color: #f4bf75;
-}
-
-.theme-base-0b .sidebar {
-  background-color: #90a959;
-}
-.theme-base-0b .content a,
-.theme-base-0b .related-posts li a:hover {
-  color: #90a959;
+/* If the date is inside a list item in related posts */
+.related-posts li time,
+.related-posts li .date {
+  color: #aaa !important; /* grey date text */
+  font-size: 0.85rem;
+  margin-left: 0.5rem;
 }
 
-.theme-base-0c .sidebar {
-  background-color: #75b5aa;
-}
-.theme-base-0c .content a,
-.theme-base-0c .related-posts li a:hover {
-  color: #75b5aa;
-}
-
-.theme-base-0d .sidebar {
-  background-color: #6a9fb5;
-}
-.theme-base-0d .content a,
-.theme-base-0d .related-posts li a:hover {
-  color: #6a9fb5;
-}
-
-.theme-base-0e .sidebar {
-  background-color: #aa759f;
-}
-.theme-base-0e .content a,
-.theme-base-0e .related-posts li a:hover {
-  color: #aa759f;
-}
-
-.theme-base-0f .sidebar {
-  background-color: #8f5536;
-}
-.theme-base-0f .content a,
-.theme-base-0f .related-posts li a:hover {
-  color: #8f5536;
-}
 
 /* ==========================================================================
    6. ARCHIVE STYLES (Hyde)
