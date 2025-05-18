@@ -1,0 +1,538 @@
+/*
+ * Combined CSS: Hyde + Poole
+ * 
+ *
+ * Hyde and Poole were both designed and released by @mdo under the MIT license.
+ */
+
+/* ==========================================================================
+   1. GLOBAL RESET & BASE STYLES
+   These reset box-sizing and margins/padding, set base font styles and colors.
+   Both Hyde and Poole start with these basic foundations.
+   ========================================================================== */
+
+/* Box-sizing reset to include padding/border in element width/height */
+* {
+  box-sizing: border-box;
+}
+
+/* Reset default margin and padding on html and body */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Base font-family, size, and line-height from Poole (slightly smaller base size) */
+html {
+  font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px; /* Poole base font size */
+  line-height: 1.5;
+}
+
+/* Responsive font sizes from Hyde and Poole combined */
+@media (min-width: 30em) { /* 480px */
+  /* Poole breakpoint for blockquote padding */
+  blockquote {
+    padding-right: 5rem;
+    padding-left: 1.25rem;
+  }
+}
+@media (min-width: 38em) { /* 608px */
+  /* Poole increases base font size */
+  html {
+    font-size: 15px;
+  }
+}
+@media (min-width: 48em) { /* 768px */
+  /* Hyde increases font size */
+  html {
+    font-size: 16px;
+  }
+}
+@media (min-width: 58em) { /* 928px */
+  /* Hyde further increases font size */
+  html {
+    font-size: 18px;
+  }
+}
+
+/* Base body styles */
+body {
+  color: #000000;             /* Black text */
+  background-color: #ffffff;  /* White background */
+  font-weight: 200;           /* Thin font weight */
+  -webkit-text-size-adjust: 100%; /* Prevent iOS font scaling */
+  text-size-adjust: 100%;
+}
+
+/* ==========================================================================
+   2. TYPOGRAPHY: HEADINGS, PARAGRAPHS, LISTS, STRONG
+   Combines Hyde and Poole styles for headings, paragraphs, strong tags, and lists.
+   ========================================================================== */
+
+/* Headings from Poole */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #000000;
+  text-rendering: optimizeLegibility;
+}
+
+/* Hyde adds font sizes and stronger weight on main heading */
+h1 {
+  font-size: 2rem;
+  font-weight: 900; /* Main page title boldest */
+}
+h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+h3 {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+}
+h4, h5, h6 {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+/* Paragraph styling */
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Strong text color override from Poole */
+strong {
+  color: #303030;
+}
+
+/* Lists */
+ul, ol, dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-bottom: 0.5rem;
+}
+
+/* ==========================================================================
+   3. LINKS
+   Style anchor elements, hover, and focus states.
+   ========================================================================== */
+
+/* Base anchor styling from Poole */
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Strong inside links inherit anchor color */
+a strong {
+  color: inherit;
+}
+
+/* Hover and focus effects */
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* Hyde sidebar links override to white */
+.sidebar a {
+  color: #fff;
+}
+
+/* ==========================================================================
+   4. LAYOUT: SIDEBAR AND CONTENT CONTAINER (from Hyde)
+   Sidebar fixed on wide screens with padding and background colors.
+   Content container margins to accommodate sidebar.
+   ========================================================================== */
+
+/* Sidebar base styles */
+.sidebar {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: rgba(255,255,255,0.5); /* semi-transparent white */
+  background-color: #202020;    /* dark gray */
+}
+
+/* Fixed sidebar on wider screens */
+@media (min-width: 48em) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 18rem; /* Sidebar width */
+    text-align: left;
+  }
+}
+
+/* Sidebar About heading */
+.sidebar-about h1 {
+  color: #fff;
+  margin-top: 0;
+  font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+/* Sidebar navigation list */
+.sidebar-nav {
+  margin-bottom: 1rem;
+}
+.sidebar-nav-item {
+  display: block;
+  line-height: 1.75;
+}
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
+  text-decoration: underline;
+}
+.sidebar-nav-item.active {
+  font-weight: bold;
+}
+
+/* Sidebar sticky section for small inner content */
+@media (min-width: 48em) {
+  .sidebar-sticky {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+  }
+}
+
+/* Main content container padding */
+.content {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* On wider screens, constrain content width and add left margin to accommodate sidebar */
+@media (min-width: 48em) {
+  .content {
+    max-width: 38rem;
+    margin-left: 16rem;
+    margin-right: 2rem;
+  }
+}
+@media (min-width: 64em) {
+  .content {
+    margin-left: 18rem;
+    margin-right: 4rem;
+  }
+}
+
+/* Reverse layout option: sidebar on right */
+@media (min-width: 48em) {
+  .layout-reverse .sidebar {
+    left: auto;
+    right: 0;
+  }
+  .layout-reverse .content {
+    margin-left: 2rem;
+    margin-right: 16rem;
+  }
+}
+@media (min-width: 64em) {
+  .layout-reverse .content {
+    margin-left: 4rem;
+    margin-right: 18rem;
+  }
+}
+
+/* ==========================================================================
+   5. THEMES (Hyde)
+   Sidebar background and link colors for various color themes.
+   ========================================================================== */
+
+.theme-base-08 .sidebar {
+  background-color: #ac4142;
+}
+.theme-base-08 .content a,
+.theme-base-08 .related-posts li a:hover {
+  color: #ac4142;
+}
+
+.theme-base-09 .sidebar {
+  background-color: #d28445;
+}
+.theme-base-09 .content a,
+.theme-base-09 .related-posts li a:hover {
+  color: #d28445;
+}
+
+.theme-base-0a .sidebar {
+  background-color: #f4bf75;
+}
+.theme-base-0a .content a,
+.theme-base-0a .related-posts li a:hover {
+  color: #f4bf75;
+}
+
+.theme-base-0b .sidebar {
+  background-color: #90a959;
+}
+.theme-base-0b .content a,
+.theme-base-0b .related-posts li a:hover {
+  color: #90a959;
+}
+
+.theme-base-0c .sidebar {
+  background-color: #75b5aa;
+}
+.theme-base-0c .content a,
+.theme-base-0c .related-posts li a:hover {
+  color: #75b5aa;
+}
+
+.theme-base-0d .sidebar {
+  background-color: #6a9fb5;
+}
+.theme-base-0d .content a,
+.theme-base-0d .related-posts li a:hover {
+  color: #6a9fb5;
+}
+
+.theme-base-0e .sidebar {
+  background-color: #aa759f;
+}
+.theme-base-0e .content a,
+.theme-base-0e .related-posts li a:hover {
+  color: #aa759f;
+}
+
+.theme-base-0f .sidebar {
+  background-color: #8f5536;
+}
+.theme-base-0f .content a,
+.theme-base-0f .related-posts li a:hover {
+  color: #8f5536;
+}
+
+/* ==========================================================================
+   6. ARCHIVE STYLES (Hyde)
+   Styles for archive lists and dates.
+   ========================================================================== */
+
+.archive-list {
+  padding-left: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.archive-list li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.archive-list a {
+  color: #000;
+  text-decoration: none;
+}
+
+.archive-list a:hover {
+  text-decoration: underline;
+}
+
+.archive-date {
+  color: #aaa;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+
+/* ==========================================================================
+   7. HEADINGS (Additional Hyde tweaks)
+   Set heavier font weights for main headings
+   ========================================================================== */
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   8. CODE AND PRE STYLES (Poole)
+   Monospaced fonts, backgrounds, and padding for code blocks.
+   ========================================================================== */
+
+code,
+pre {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+}
+
+/* Inline code styling */
+code {
+  padding: 0.25em 0.5em;
+  font-size: 85%;
+  color: #bf616a;
+  background-color: #f9f9f9;
+  border-radius: 3px;
+}
+
+/* Block code styling */
+pre {
+  display: block;
+  padding: 1rem;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  background-color: #f9f9f9;
+}
+
+/* Remove inline code padding and background inside pre */
+pre code {
+  padding: 0;
+  font-size: 100%;
+  color: inherit;
+  background-color: transparent;
+}
+
+/* Pygments code highlight styles */
+.highlight {
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+.highlight pre {
+  margin-bottom: 0;
+}
+
+/* GitHub Gist styles */
+.gist .gist-file {
+  font-family: Menlo, Monaco, "Courier New", monospace !important;
+}
+.gist .markdown-body {
+  padding: 15px;
+}
+.gist pre {
+  padding: 0;
+  background-color: transparent;
+}
+.gist .gist-file .gist-data {
+  font-size: 0.8rem !important;
+  line-height: 1.4;
+}
+.gist code {
+  padding: 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+/* ==========================================================================
+   9. QUOTES (Poole)
+   Styles blockquotes with padding and border.
+   ========================================================================== */
+
+blockquote {
+  padding: 0.5rem 1rem;
+  margin: 0.8rem 0;
+  color: #7a7a7a;
+  border-left: 0.25rem solid #e5e5e5;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+   10. IMAGES (Poole)
+   Responsive images with block display and margin.
+   ========================================================================== */
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0 0 1rem;
+  border-radius: 5px;
+}
+
+/* ==========================================================================
+   11. TABLES (Poole)
+   Styled with borders, padding, and alternating row background colors.
+   ========================================================================== */
+
+table {
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #e5e5e5;
+}
+
+/* Zebra stripe for odd rows */
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+  background-color: #f9f9f9;
+}
+
+/* ==========================================================================
+   12. CUSTOM TYPOGRAPHY AND MESSAGES (Poole)
+   Lead paragraph and message box styles.
+   ========================================================================== */
+
+.lead {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.message {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  color: #717171;
+  background-color: #f9f9f9;
+}
+
+/* ==========================================================================
+   13. FORM ELEMENTS (Poole)
+   Styles for inputs, textareas, and selects with padding and borders.
+   ========================================================================== */
+
+input,
+textarea,
+select {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+/* ==========================================================================
+   14. UTILITIES AND MISC (from both)
+   Float clearing and accessibility helpers.
+   ========================================================================== */
+
+/* Clearfix */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Screen reader only */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  border: 0 !important;
+}
+
+/* ==========================================================================
+   15. MISCELLANEOUS & OVERRIDES
+   Keep this at bottom for any overrides, adjustments, or future customizations.
+   ========================================================================== */
+
+/* Add any future overrides here */
+
