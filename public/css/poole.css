@@ -9,67 +9,40 @@
  *    \ \_\
  *     \/_/
  *
- * Designed, built, and released under MIT license by @mdo. Learn more at
- * https://github.com/poole/poole.
+ * Designed, built, and released under MIT license by @mdo.
  */
 
 
-/*
- * Contents
- *
- * Body resets
- * Custom type
- * Messages
- * Container
- * Masthead
- * Posts and pages
- * Pagination
- * Reverse layout
- * Themes
- */
-
-
-/*
- * Body resets
- *
- * Update the foundational and global aspects of the page.
- */
+/* Body resets */
 
 * {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
 }
 
 html {
   font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.5;
 }
 
-
-
 @media (min-width: 38em) {
   html {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
 body {
   color: #000000;
   background-color: #fff;
-  -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   font-weight: 200;
 }
 
-/* No `:visited` state is required by default (browsers will use `a`) */
 a {
   color: #000000;
   text-decoration: none;
@@ -77,22 +50,25 @@ a {
 a strong {
   color: inherit;
 }
-/* `:focus` is linked to `:hover` for basic accessibility */
 a:hover,
 a:focus {
   text-decoration: underline;
 }
 
+
 /* Headings */
+
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 1.25;
   color: #000000;
   text-rendering: optimizeLegibility;
 }
+
 h1 {
   font-size: 2rem;
+  font-weight: 900; /* Main page title boldest */
 }
 h2 {
   margin-top: 1rem;
@@ -107,7 +83,9 @@ h4, h5, h6 {
   font-size: 1rem;
 }
 
+
 /* Body text */
+
 p {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -119,11 +97,11 @@ strong {
 
 
 /* Lists */
+
 ul, ol, dl {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-
 dt {
   font-weight: bold;
 }
@@ -131,9 +109,10 @@ dd {
   margin-bottom: .5rem;
 }
 
+
 /* Misc */
+
 hr {
-  position: relative;
   margin: 1.5rem 0;
   border: 0;
   border-top: 1px solid #eee;
@@ -151,7 +130,9 @@ abbr[title] {
   border-bottom: 1px dotted #e5e5e5;
 }
 
+
 /* Code */
+
 code,
 pre {
   font-family: Menlo, Monaco, "Courier New", monospace;
@@ -165,15 +146,10 @@ code {
 }
 pre {
   display: block;
-  margin-top: 0;
-  margin-bottom: 1rem;
   padding: 1rem;
   font-size: .8rem;
   line-height: 1.4;
-  white-space: pre;
   white-space: pre-wrap;
-  word-break: break-all;
-  word-wrap: break-word;
   background-color: #f9f9f9;
 }
 pre code {
@@ -183,7 +159,9 @@ pre code {
   background-color: transparent;
 }
 
+
 /* Pygments via Jekyll */
+
 .highlight {
   margin-bottom: 1rem;
   border-radius: 4px;
@@ -192,7 +170,9 @@ pre code {
   margin-bottom: 0;
 }
 
-/* Gist via GitHub Pages */
+
+/* GitHub Gist */
+
 .gist .gist-file {
   font-family: Menlo, Monaco, "Courier New", monospace !important;
 }
@@ -209,12 +189,13 @@ pre code {
 }
 .gist code {
   padding: 0;
-  color: inherit;
   background-color: transparent;
   border-radius: 0;
 }
 
+
 /* Quotes */
+
 blockquote {
   padding: .5rem 1rem;
   margin: .8rem 0;
@@ -231,6 +212,9 @@ blockquote p:last-child {
   }
 }
 
+
+/* Images */
+
 img {
   display: block;
   max-width: 100%;
@@ -238,15 +222,16 @@ img {
   border-radius: 5px;
 }
 
+
 /* Tables */
+
 table {
   margin-bottom: 1rem;
   width: 100%;
   border: 1px solid #e5e5e5;
   border-collapse: collapse;
 }
-td,
-th {
+td, th {
   padding: .25rem .5rem;
   border: 1px solid #e5e5e5;
 }
@@ -256,24 +241,15 @@ tbody tr:nth-child(odd) th {
 }
 
 
-/*
- * Custom type
- *
- * Extend paragraphs with `.lead` for larger introductory text.
- */
+/* Custom type */
 
 .lead {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 300;
 }
 
 
-/*
- * Messages
- *
- * Show alert messages to users. You may add it to single elements like a `<p>`,
- * or to a parent if there are multiple elements to show.
- */
+/* Messages */
 
 .message {
   margin-bottom: 1rem;
@@ -283,61 +259,44 @@ tbody tr:nth-child(odd) th {
 }
 
 
-/*
- * Container
- *
- * Center the page content.
- */
+/* Container */
 
 .container {
   max-width: 38rem;
-  padding-left:  1rem;
-  padding-right: 1rem;
-  margin-left:  auto;
-  margin-right: auto;
+  padding: 0 1rem;
+  margin: 0 auto;
 }
 
 
-/*
- * Masthead
- *
- * Super small header above the content for site name and short description.
- */
+/* Masthead */
 
 .masthead {
-  padding-top:    1rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 3rem;
 }
 .masthead-title {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #505050;
+  margin: 0;
+  color: #000;
+  font-weight: 900;
 }
 .masthead-title a {
-  color: #505050;
+  color: #000;
 }
 .masthead-title small {
   font-size: 75%;
   font-weight: 400;
   color: #c0c0c0;
-  letter-spacing: 0;
 }
 
 
-/*
- * Posts and pages
- *
- * Each post is wrapped in `.post` and is used on default and post layouts. Each
- * page is wrapped in `.page` and is only used on the page layout.
- */
+/* Posts and pages */
 
 .page,
 .post {
   margin-bottom: 4em;
 }
 
-/* Blog post or page title */
 .page-title,
 .post-title,
 .post-title a {
@@ -348,7 +307,9 @@ tbody tr:nth-child(odd) th {
   margin-top: 0;
 }
 
-/* Meta data line below post title */
+
+/* Meta data */
+
 .post-date {
   display: block;
   margin-top: -.5rem;
@@ -356,10 +317,11 @@ tbody tr:nth-child(odd) th {
   color: #9a9a9a;
 }
 
+
 /* Related posts */
+
 .related {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem 0;
   border-top: 1px solid #eee;
 }
 .related-posts {
@@ -382,23 +344,16 @@ tbody tr:nth-child(odd) th {
 }
 
 
-/*
- * Pagination
- *
- * Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
- * there are no more previous or next posts to show.
- */
+/* Pagination */
 
 .pagination {
-  overflow: hidden; /* clearfix */
+  overflow: hidden;
   margin-left: -1rem;
   margin-right: -1rem;
   font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   color: #ccc;
   text-align: center;
 }
-
-/* Pagination items can be `span`s or `a`s */
 .pagination-item {
   display: block;
   padding: 1rem;
@@ -407,8 +362,6 @@ tbody tr:nth-child(odd) th {
 .pagination-item:first-child {
   margin-bottom: -1px;
 }
-
-/* Only provide a hover state for linked pagination items */
 a.pagination-item:hover {
   background-color: #f5f5f5;
 }
@@ -423,12 +376,12 @@ a.pagination-item:hover {
   }
   .pagination-item:first-child {
     margin-bottom: 0;
-    border-top-left-radius:    4px;
+    border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
   }
   .pagination-item:last-child {
     margin-left: -1px;
-    border-top-right-radius:    4px;
+    border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
   }
 }
