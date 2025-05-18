@@ -55,9 +55,9 @@ As you can see theres an extra square. Instead of having a strange 15 day pill b
 
 ### Admire The Beauty
 
-It's done. Isn't it *beautiful. 
+It's done. Isn't it *beautiful*. 
 
-More importantly it saved me £18.50 from potential convincing myself to buy that ridiculously expensive one at the start so I say mission complete.
+More importantly, it saved me £18.50 from potentially convincing myself to buy that ridiculously expensive one at the start, so I say **mission complete**.
 
 ![](/_assets/photos/IMG_1741.jpeg)
 
