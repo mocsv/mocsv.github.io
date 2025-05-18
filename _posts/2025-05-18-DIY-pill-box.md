@@ -9,11 +9,11 @@ So, I've been searching for a pill box. I found many options online, however mos
 
 Seriously I mean like £20 for a few tubes that have the days of the week printed on them...
 
-![](/_assets/photos/pillbox.png)
+![Pillbox Amazon Screenshot](/_assets/photos/pillbox.png)
 
 Which led me to this.
 
-![](/_assets/photos/IMG_1722.jpeg)
+![Cheap £1.50 Pillbox Alternative](/_assets/photos/IMG_1722.jpeg)
 
 In an arts and crafts store I found this clear box. It was £1.50, comes with little plastic dividers and has enough containers for 2 weeks worth of pills (with a spare square!)
 
@@ -21,13 +21,13 @@ In an arts and crafts store I found this clear box. It was £1.50, comes with li
 
 - Wash the box with warm soapy water and dry thoroughly.
 
-![](/_assets/photos/IMG_1721.jpeg)
+![A Clean Box](/_assets/photos/IMG_1721.jpeg)
 
 ### Tools
 
 - Gather your equipment. I used masking tape, a sharpie and a Stanley knife, but really you could call it a day at a pen.
 
-![](/_assets/photos/IMG_1726.jpeg)
+![Tools Needed](/_assets/photos/IMG_1726.jpeg)
 
 ### Label
 
@@ -35,23 +35,23 @@ In an arts and crafts store I found this clear box. It was £1.50, comes with li
 - Write your days in whichever order you like.
 - Ta-da its basically done.
 
-![](/_assets/photos/IMG_1728.jpeg)
-![](/_assets/photos/IMG_1729.jpeg)
-![](/_assets/photos/IMG_1732.jpeg)
-![](/_assets/photos/IMG_1733.jpeg)
+![Tape](/_assets/photos/IMG_1728.jpeg)
+![Label The Box](/_assets/photos/IMG_1729.jpeg)
+![Label The Box](/_assets/photos/IMG_1732.jpeg)
+![Label The Box](/_assets/photos/IMG_1733.jpeg)
 
 ### Pill Time
 
 - Load up those pills baby.
 
-![](/_assets/photos/IMG_1735.jpeg)
-![](/_assets/photos/IMG_1738.jpeg)
+![Pill Start](/_assets/photos/IMG_1735.jpeg)
+![Loaded With Pills](/_assets/photos/IMG_1738.jpeg)
 
 ### Special Final Square
 
 As you can see theres an extra square. Instead of having a strange 15 day pill box I drew a wonky first aid symbol on the masking tape and decided to pop in some Ibuprofen and Paracetamol.
 
-![](/_assets/photos/IMG_1740.jpeg)
+![The Final Square](/_assets/photos/IMG_1740.jpeg)
 
 ### Admire The Beauty
 
@@ -59,6 +59,6 @@ It's done. Isn't it *beautiful*.
 
 More importantly, it saved me £18.50 from potentially convincing myself to buy that ridiculously expensive one at the start, so I say **mission complete**.
 
-![](/_assets/photos/IMG_1741.jpeg)
+![Finished Pill Box](/_assets/photos/IMG_1741.jpeg)
 
 I realise it's quite unnecessary to make a step by step guide on how to label a pill box...but here it is anyway, you're welcome :)
