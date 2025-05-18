@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Specific heading sizes */
 h1 {
-  font-size: 3.5rem;   /* Main page title */
+  font-size: 2rem;   /* Main page title */
   font-weight: 900;    /* Boldest for h1 */
   margin-top: 0;
 }
@@ -141,7 +141,8 @@ a:focus {
 .sidebar a {
   color: #fff;
   text-decoration: none;
-  font-weight: 200;
+  font-size: 1.5rem; /* See if this changes the archive link */
+  font-weight: 600;
 }
 
 .sidebar a:hover {
@@ -160,7 +161,7 @@ a:focus {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 18rem;              /* Slightly smaller sidebar width */
+  width: 16rem;              /* Slightly smaller sidebar width */
   padding: 2rem 1rem;
   background-color: #111;    /* Black sidebar background */
   overflow-y: auto;
@@ -178,7 +179,7 @@ a:focus {
 
 /* Sidebar title fixed to bottom */
 .sidebar .site-title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 900;
   margin: 0;
   color: #fff;
@@ -227,7 +228,7 @@ a:focus {
 
 .sidebar .copyright {
   color: #666; /* lighter grey for copyright */
-  font-size: 0.85rem;
+  font-size: 0.5rem;
   text-align: center;
   margin-top: 1rem;
 }
