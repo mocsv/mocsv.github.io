@@ -44,7 +44,7 @@ html, body {
  */
 
 .sidebar {
-  text-align: center;
+  text-align: left;
   padding: 2rem 1rem;
   color: rgba(255,255,255,.5);
   background-color: #202020;
@@ -55,7 +55,7 @@ html, body {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 18rem;
+    width: 20rem;
     text-align: left;
   }
 }
@@ -71,7 +71,7 @@ html, body {
   margin-top: 0;
   font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 900;
-  font-size: 2.5rem;
+  font-size: 3.0rem;
 }
 
 /* Sidebar nav */
