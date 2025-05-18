@@ -29,12 +29,12 @@ html, body {
 
 @media (min-width: 48em) {
   html {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media (min-width: 58em) {
   html {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
