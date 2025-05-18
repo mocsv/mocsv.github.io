@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "A £1.50 DIY pill box"
@@ -16,13 +15,14 @@ Which led me to this.
 
 ![[IMG_1722 2.jpeg]]
 
-In an arts and crafts store I found this clear box. It was £1.50, comes with little plastic dividers and has enough containers for 2 weeks worth of pills (with a spare square).
+In an arts and crafts store I found this clear box. It was £1.50, comes with little plastic dividers and has enough containers for 2 weeks worth of pills (with a spare square!)
 
 ### Clean the box
 
 - Wash the box with warm soapy water and dry thoroughly.
 
 ![[IMG_1721 1.jpeg]]
+
 ### Tools
 
 - Gather your equipment. I used masking tape, a sharpie and a Stanley knife, but really you could call it a day at a pen.
@@ -60,4 +60,4 @@ More importantly it saved me £18.50 from potential convincing myself to buy tha
 
 ---
 
-I realise it's quite unnecessary to make a step by step guide on how to label a pill box but here it is anyway :)
+I realise it's quite unnecessary to make a step by step guide on how to label a pill box...but here it is anyway, you're welcome :)
