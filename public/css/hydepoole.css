@@ -59,7 +59,7 @@ html {
 body {
   color: #000000;             /* Black text */
   background-color: #ffffff;  /* White background */
-  font-weight: 400;           /* Normal font weight for readability (changed from 200) */
+  font-weight: 200;           /* Normal font weight for readability (changed from 200) */
   -webkit-text-size-adjust: 100%; /* Prevent iOS font scaling */
   text-size-adjust: 100%;
 }
@@ -72,7 +72,7 @@ body {
 /* Headings from Poole */
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.25;
   color: #000000;
   text-rendering: optimizeLegibility;
@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hyde adds font sizes and stronger weight on main heading */
 h1 {
-  font-size: 3rem;           /* Increased for bigger main title */
+  font-size: 3.5rem;           /* Increased for bigger main title */
   font-weight: 900;          /* Main page title boldest */
 }
 h2 {
@@ -158,18 +158,18 @@ a:focus {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 14rem;
+  width: 20rem;
   padding: 2rem 1rem;
   background-color: #111; /* Black sidebar background restored */
   overflow-y: auto;
   color: #fff;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 /* Sidebar title */
 .sidebar .site-title {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 900;
   margin: 0 0 1rem;
   color: #fff;
   text-decoration: none;
@@ -196,7 +196,7 @@ a:focus {
 .sidebar nav a {
   color: #fff;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 .sidebar nav a:hover {
@@ -206,16 +206,16 @@ a:focus {
 /* Content container with padding so text isn't flush to sidebar */
 @media (min-width: 48em) {
   .content {
-    padding-left: 1.5rem; /* breathing space between sidebar and content */
+    padding-left: 1rem; /* breathing space between sidebar and content */
     max-width: 38rem;
-    margin-left: 16rem;    /* space for fixed sidebar */
+    margin-left: 20rem;    /* space for fixed sidebar */
     margin-right: 2rem;
   }
 }
 @media (min-width: 64em) {
   .content {
-    padding-left: 1.5rem; /* keep consistent padding */
-    margin-left: 18rem;
+    padding-left: 1rem; /* keep consistent padding */
+    margin-left: 20rem;
     margin-right: 4rem;
   }
 }
