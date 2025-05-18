@@ -1,7 +1,6 @@
 /*
  * Combined CSS: Hyde + Poole
  * 
- *
  * Hyde and Poole were both designed and released by @mdo under the MIT license.
  */
 
@@ -60,7 +59,7 @@ html {
 body {
   color: #000000;             /* Black text */
   background-color: #ffffff;  /* White background */
-  font-weight: 200;           /* Thin font weight */
+  font-weight: 400;           /* Normal font weight for readability (changed from 200) */
   -webkit-text-size-adjust: 100%; /* Prevent iOS font scaling */
   text-size-adjust: 100%;
 }
@@ -81,8 +80,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hyde adds font sizes and stronger weight on main heading */
 h1 {
-  font-size: 2rem;
-  font-weight: 900; /* Main page title boldest */
+  font-size: 3rem;           /* Increased for bigger main title */
+  font-weight: 900;          /* Main page title boldest */
 }
 h2 {
   margin-top: 1rem;
@@ -153,20 +152,63 @@ a:focus {
    Content container margins to accommodate sidebar.
    ========================================================================== */
 
-/* Main title bigger */
-/* Previously h1 font-size: 2rem; let's bump it up */
-h1 {
-  font-size: 3rem; /* Increased from 2rem for bigger main title */
-  font-weight: 900;
+/* Sidebar wrapper */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 14rem;
+  padding: 2rem 1rem;
+  background-color: #111; /* Black sidebar background restored */
+  overflow-y: auto;
+  color: #fff;
+  font-weight: 400;
 }
 
-/* Add gap before content text so it doesn't sit right against sidebar */
-/* We'll add some left padding inside the .content on wider screens */
+/* Sidebar title */
+.sidebar .site-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Sidebar description/subtitle */
+.sidebar .site-description {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 2rem;
+}
+
+/* Sidebar navigation list */
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.sidebar nav a:hover {
+  text-decoration: underline;
+}
+
+/* Content container with padding so text isn't flush to sidebar */
 @media (min-width: 48em) {
   .content {
-    padding-left: 1.5rem; /* Added padding to create breathing space */
+    padding-left: 1.5rem; /* breathing space between sidebar and content */
     max-width: 38rem;
-    margin-left: 16rem;
+    margin-left: 16rem;    /* space for fixed sidebar */
     margin-right: 2rem;
   }
 }
@@ -184,7 +226,6 @@ h1 {
    ========================================================================== */
 
 /* Fix related posts date color: make it grey like before */
-/* Related posts date selector assumed as .related-posts-date or similar */
 .related-posts-date {
   color: #aaa !important; /* light grey for date text */
   font-size: 0.85rem;
@@ -198,7 +239,6 @@ h1 {
   font-size: 0.85rem;
   margin-left: 0.5rem;
 }
-
 
 /* ==========================================================================
    6. ARCHIVE STYLES (Hyde)
@@ -419,4 +459,3 @@ select {
    ========================================================================== */
 
 /* Add any future overrides here */
-
