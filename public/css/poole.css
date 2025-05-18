@@ -48,7 +48,7 @@ body {
 }
 
 html {
-  font-family: 'Roboto Mono', 'SFMono-Regular', 'Courier New', Courier, monospace;
+  font-family: 'PT Sans', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -393,7 +393,7 @@ tbody tr:nth-child(odd) th {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
-  font-family: 'Roboto Mono', 'SFMono-Regular', 'Courier New', Courier, monospace;
+  font-family: 'PT Sans', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   color: #ccc;
   text-align: center;
 }
