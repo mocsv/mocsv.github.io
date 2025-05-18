@@ -31,7 +31,7 @@
  * Update the foundational and global aspects of the page.
  */
 html, body {
-  font-family: 'PT Sans', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   background-color: #ffffff;
   color: #000000;
 }
@@ -82,8 +82,8 @@ html, body {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: 'PT Sans', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 600;
+  font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 800;
   font-size: 3.25rem;
 }
 
