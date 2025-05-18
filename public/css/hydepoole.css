@@ -1,13 +1,12 @@
 /*
- * Combined CSS: Hyde + Poole
+ * Combined CSS: Hyde + Poole (cleaned and optimized)
  * 
  * Hyde and Poole were both designed and released by @mdo under the MIT license.
  */
 
 /* ==========================================================================
    1. GLOBAL RESET & BASE STYLES
-   These reset box-sizing and margins/padding, set base font styles and colors.
-   Both Hyde and Poole start with these basic foundations.
+   Reset box-sizing, margins, padding; set base font styles and colors.
    ========================================================================== */
 
 /* Box-sizing reset to include padding/border in element width/height */
@@ -21,35 +20,31 @@ html, body {
   padding: 0;
 }
 
-/* Base font-family, size, and line-height from Poole (slightly smaller base size) */
+/* Base font-family, size, and line-height */
 html {
   font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 13px; /* Poole base font size */
+  font-size: 13px; /* Base font size from Poole */
   line-height: 1.5;
 }
 
-/* Responsive font sizes from Hyde and Poole combined */
+/* Responsive font sizes for different viewport widths */
 @media (min-width: 30em) { /* 480px */
-  /* Poole breakpoint for blockquote padding */
   blockquote {
     padding-right: 5rem;
     padding-left: 1.25rem;
   }
 }
 @media (min-width: 38em) { /* 608px */
-  /* Poole increases base font size */
   html {
     font-size: 15px;
   }
 }
 @media (min-width: 48em) { /* 768px */
-  /* Hyde increases font size */
   html {
     font-size: 16px;
   }
 }
 @media (min-width: 58em) { /* 928px */
-  /* Hyde further increases font size */
   html {
     font-size: 18px;
   }
@@ -59,41 +54,42 @@ html {
 body {
   color: #000000;             /* Black text */
   background-color: #ffffff;  /* White background */
-  font-weight: 200;           /* Normal font weight for readability (changed from 200) */
+  font-weight: 300;           /* Slightly heavier than 200 for readability */
   -webkit-text-size-adjust: 100%; /* Prevent iOS font scaling */
   text-size-adjust: 100%;
 }
 
 /* ==========================================================================
    2. TYPOGRAPHY: HEADINGS, PARAGRAPHS, LISTS, STRONG
-   Combines Hyde and Poole styles for headings, paragraphs, strong tags, and lists.
+   Cleaned heading font-weights and sizes, paragraph, strong, lists.
    ========================================================================== */
 
-/* Headings from Poole */
+/* Headings base styles */
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
-  font-weight: 400;
-  line-height: 1.25;
   color: #000000;
   text-rendering: optimizeLegibility;
+  line-height: 1.25;
+  font-weight: 600; /* Consistent weight for main headings */
 }
 
-/* Hyde adds font sizes and stronger weight on main heading */
+/* Specific heading sizes */
 h1 {
-  font-size: 3.5rem;           /* Increased for bigger main title */
-  font-weight: 900;          /* Main page title boldest */
+  font-size: 3.5rem;   /* Main page title */
+  font-weight: 900;    /* Boldest for h1 */
+  margin-top: 0;
 }
 h2 {
-  margin-top: 1rem;
   font-size: 1.5rem;
+  margin-top: 1rem;
 }
 h3 {
-  margin-top: 1.5rem;
   font-size: 1.25rem;
+  margin-top: 1.5rem;
 }
 h4, h5, h6 {
-  margin-top: 1rem;
   font-size: 1rem;
+  margin-top: 1rem;
 }
 
 /* Paragraph styling */
@@ -102,7 +98,7 @@ p {
   margin-bottom: 1rem;
 }
 
-/* Strong text color override from Poole */
+/* Strong text color override */
 strong {
   color: #303030;
 }
@@ -124,7 +120,7 @@ dd {
    Style anchor elements, hover, and focus states.
    ========================================================================== */
 
-/* Base anchor styling from Poole */
+/* Base anchor styling */
 a {
   color: #000000;
   text-decoration: none;
@@ -141,13 +137,19 @@ a:focus {
   text-decoration: underline;
 }
 
-/* Hyde sidebar links override to white */
+/* Hyde sidebar links */
 .sidebar a {
   color: #fff;
+  text-decoration: none;
+  font-weight: 200;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
 }
 
 /* ==========================================================================
-   4. LAYOUT: SIDEBAR AND CONTENT CONTAINER (from Hyde)
+   4. LAYOUT: SIDEBAR AND CONTENT CONTAINER
    Sidebar fixed on wide screens with padding and background colors.
    Content container margins to accommodate sidebar.
    ========================================================================== */
@@ -158,21 +160,32 @@ a:focus {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 20rem;
+  width: 18rem;              /* Slightly smaller sidebar width */
   padding: 2rem 1rem;
-  background-color: #111; /* Black sidebar background restored */
+  background-color: #111;    /* Black sidebar background */
   overflow-y: auto;
   color: #fff;
   font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* To place site title at bottom */
 }
 
-/* Sidebar title */
+/* Sidebar main content container (navigation etc.) */
+.sidebar .sidebar-main {
+  /* Will wrap the top content (nav, description, etc.) */
+}
+
+/* Sidebar title fixed to bottom */
 .sidebar .site-title {
   font-size: 2rem;
   font-weight: 900;
-  margin: 0 0 1rem;
+  margin: 0;
   color: #fff;
   text-decoration: none;
+  align-self: center; /* Center horizontally */
+  padding-top: 1rem;
+  /* No bottom margin so it hugs bottom */
 }
 
 /* Sidebar description/subtitle */
@@ -186,62 +199,50 @@ a:focus {
 .sidebar nav ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 2rem 0; /* spacing before site title */
 }
 
 .sidebar nav ul li {
   margin-bottom: 0.5rem;
 }
 
-.sidebar nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 200;
+/* Content container with padding and margin to accommodate fixed sidebar */
+.content {
+  padding-left: 1rem; /* breathing space between sidebar and content */
+  max-width: 38rem;
+  margin-left: 18rem;    /* matches sidebar width */
+  margin-right: 2rem;
 }
 
-.sidebar nav a:hover {
-  text-decoration: underline;
-}
-
-/* Content container with padding so text isn't flush to sidebar */
-@media (min-width: 48em) {
-  .content {
-    padding-left: 1rem; /* breathing space between sidebar and content */
-    max-width: 38rem;
-    margin-left: 20rem;    /* space for fixed sidebar */
-    margin-right: 2rem;
-  }
-}
 @media (min-width: 64em) {
   .content {
-    padding-left: 1rem; /* keep consistent padding */
-    margin-left: 20rem;
     margin-right: 4rem;
   }
 }
 
 /* ==========================================================================
-   5. THEMES (Hyde)
-   Sidebar background and link colors for various color themes.
+   5. THEMES AND SIDEBAR ADDITIONS
+   Sidebar copyright styling lighter than other text.
    ========================================================================== */
 
-/* Fix related posts date color: make it grey like before */
-.related-posts-date {
-  color: #aaa !important; /* light grey for date text */
+.sidebar .copyright {
+  color: #666; /* lighter grey for copyright */
   font-size: 0.85rem;
-  margin-left: 0.5rem;
+  text-align: center;
+  margin-top: 1rem;
 }
 
-/* If the date is inside a list item in related posts */
+/* Related posts date styles merged */
+.related-posts-date,
 .related-posts li time,
 .related-posts li .date {
-  color: #aaa !important; /* grey date text */
+  color: #aaa !important; /* light grey */
   font-size: 0.85rem;
   margin-left: 0.5rem;
 }
 
 /* ==========================================================================
-   6. ARCHIVE STYLES (Hyde)
+   6. ARCHIVE STYLES
    Styles for archive lists and dates.
    ========================================================================== */
 
@@ -271,16 +272,7 @@ a:focus {
 }
 
 /* ==========================================================================
-   7. HEADINGS (Additional Hyde tweaks)
-   Set heavier font weights for main headings
-   ========================================================================== */
-
-h1, h2, h3, h4 {
-  font-weight: 600;
-}
-
-/* ==========================================================================
-   8. CODE AND PRE STYLES (Poole)
+   7. CODE AND PRE STYLES
    Monospaced fonts, backgrounds, and padding for code blocks.
    ========================================================================== */
 
@@ -347,7 +339,7 @@ pre code {
 }
 
 /* ==========================================================================
-   9. QUOTES (Poole)
+   8. QUOTES
    Styles blockquotes with padding and border.
    ========================================================================== */
 
@@ -363,7 +355,7 @@ blockquote p:last-child {
 }
 
 /* ==========================================================================
-   10. IMAGES (Poole)
+   9. IMAGES
    Responsive images with block display and margin.
    ========================================================================== */
 
@@ -375,7 +367,7 @@ img {
 }
 
 /* ==========================================================================
-   11. TABLES (Poole)
+   10. TABLES
    Styled with borders, padding, and alternating row background colors.
    ========================================================================== */
 
@@ -398,7 +390,7 @@ tbody tr:nth-child(odd) th {
 }
 
 /* ==========================================================================
-   12. CUSTOM TYPOGRAPHY AND MESSAGES (Poole)
+   11. CUSTOM TYPOGRAPHY AND MESSAGES
    Lead paragraph and message box styles.
    ========================================================================== */
 
@@ -415,7 +407,7 @@ tbody tr:nth-child(odd) th {
 }
 
 /* ==========================================================================
-   13. FORM ELEMENTS (Poole)
+   12. FORM ELEMENTS
    Styles for inputs, textareas, and selects with padding and borders.
    ========================================================================== */
 
@@ -430,7 +422,7 @@ select {
 }
 
 /* ==========================================================================
-   14. UTILITIES AND MISC (from both)
+   13. UTILITIES AND MISC
    Float clearing and accessibility helpers.
    ========================================================================== */
 
@@ -454,7 +446,7 @@ select {
 }
 
 /* ==========================================================================
-   15. MISCELLANEOUS & OVERRIDES
+   14. MISCELLANEOUS & OVERRIDES
    Keep this at bottom for any overrides, adjustments, or future customizations.
    ========================================================================== */
 
